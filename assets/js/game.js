@@ -134,34 +134,34 @@ var fight = function(enemy) {
             }
             // player gets attacked first
         } else {
-        var damage = randomNumber(enemy.attack - 3, enemy.attack);
-  
-        // remove player's health by subtracting the amount we set in the damage variable
-        playerInfo.health = Math.max(0, playerInfo.health - damage);
-        console.log(
-            enemy.name +
-            " attacked " +
-            playerInfo.name +
-            ". " +
-            playerInfo.name +
-            " now has " +
-            playerInfo.health +
-            " health remaining."
-        );
-  
-        // check player's health
-        if (playerInfo.health <= 0) {
-            window.alert(playerInfo.name + " has died!");
-            // leave while() loop if player is dead
-            break;
-        } else {
-            window.alert(playerInfo.name + " still has " + playerInfo.health + " health left.");
+            var damage = randomNumber(enemy.attack - 3, enemy.attack);
+    
+            // remove player's health by subtracting the amount we set in the damage variable
+            playerInfo.health = Math.max(0, playerInfo.health - damage);
+            console.log(
+                enemy.name +
+                " attacked " +
+                playerInfo.name +
+                ". " +
+                playerInfo.name +
+                " now has " +
+                playerInfo.health +
+                " health remaining."
+            );
+    
+            // check player's health
+            if (playerInfo.health <= 0) {
+                window.alert(playerInfo.name + " has died!");
+                // leave while() loop if player is dead
+                break;
+            } else {
+                window.alert(playerInfo.name + " still has " + playerInfo.health + " health left.");
+            }
         }
-      }
-      // switch turn order for next round
-      isPlayerTurn = !isPlayerTurn;
+        // switch turn order for next round
+        isPlayerTurn = !isPlayerTurn;
     }
-  };
+};
 // function to start a new game
 
 var startGame = function() {
