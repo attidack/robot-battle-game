@@ -3,7 +3,7 @@
 ## Description
 
 This is a JavaScript game called Robot Gladiators.  
-This game was created just using javaScript no css and minimul html
+This game was created just using javaScript, no css, and,little html
 
 Features include:
 - fight or skip
